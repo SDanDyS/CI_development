@@ -16,7 +16,7 @@ jobs:
   
     steps:
     - name: Install dependencies
-      run: composer install --prefer-dist --no-progress
-  
+      run: composer install --prefer-dist --no-progress --no-suggest
+      
     - name: Run PHPUnit
       run: ./vendor/bin/phpunit --coverage-text
