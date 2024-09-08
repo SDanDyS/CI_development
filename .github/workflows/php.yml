@@ -13,7 +13,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    
+    strategy:
+      matrix:
+        php: [ '8.2', '8.3' ] # Upgraded PHP versions
+        
     steps:
     - uses: actions/checkout@v4
 
